@@ -1,0 +1,52 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "devCommand": "npm run dev",
+  "env": {
+    "NEXT_PUBLIC_ETHEREUM_RPC_URL": "@ethereum_rpc_url",
+    "NEXT_PUBLIC_POLYGON_RPC_URL": "@polygon_rpc_url",
+    "NEXT_PUBLIC_BASE_RPC_URL": "@base_rpc_url",
+    "NEXT_PUBLIC_BSC_RPC_URL": "@bsc_rpc_url",
+    "ALCHEMY_API_KEY": "@alchemy_api_key",
+    "INFURA_API_KEY": "@infura_api_key",
+    "AAVE_V3_POOL_ADDRESS": "@aave_v3_pool_address",
+    "DYDX_SOLO_MARGIN_ADDRESS": "@dydx_solo_margin_address",
+    "UNISWAP_V2_ROUTER": "@uniswap_v2_router",
+    "SUSHISWAP_ROUTER": "@sushiswap_router",
+    "PANCAKESWAP_ROUTER": "@pancakeswap_router",
+    "MIN_PROFIT_THRESHOLD": "@min_profit_threshold",
+    "MAX_GAS_PRICE": "@max_gas_price",
+    "SLIPPAGE_TOLERANCE": "@slippage_tolerance",
+    "MONITORING_INTERVAL": "@monitoring_interval",
+    "ENABLE_MAINNET": "@enable_mainnet",
+    "ENABLE_AUTO_EXECUTION": "@enable_auto_execution"
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_ETHEREUM_RPC_URL": "@ethereum_rpc_url",
+      "NEXT_PUBLIC_POLYGON_RPC_URL": "@polygon_rpc_url",
+      "NEXT_PUBLIC_BASE_RPC_URL": "@base_rpc_url",
+      "NEXT_PUBLIC_BSC_RPC_URL": "@bsc_rpc_url",
+      "ALCHEMY_API_KEY": "@alchemy_api_key",
+      "INFURA_API_KEY": "@infura_api_key",
+      "AAVE_V3_POOL_ADDRESS": "@aave_v3_pool_address",
+      "DYDX_SOLO_MARGIN_ADDRESS": "@dydx_solo_margin_address",
+      "UNISWAP_V2_ROUTER": "@uniswap_v2_router",
+      "SUSHISWAP_ROUTER": "@sushiswap_router",
+      "PANCAKESWAP_ROUTER": "@pancakeswap_router",
+      "MIN_PROFIT_THRESHOLD": "@min_profit_threshold",
+      "MAX_GAS_PRICE": "@max_gas_price",
+      "SLIPPAGE_TOLERANCE": "@slippage_tolerance",
+      "MONITORING_INTERVAL": "@monitoring_interval",
+      "ENABLE_MAINNET": "@enable_mainnet",
+      "ENABLE_AUTO_EXECUTION": "@enable_auto_execution"
+    }
+  },
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  }
+}
